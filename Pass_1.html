@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly Language Processor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Assembly Language Processor</h1>
+        </header>
+        
+        <section class="upload-section">
+            <h2>Upload Files</h2>
+            <div class="file-upload">
+                <label for="file1">Assembly Code File:</label>
+                <input type="file" id="file1" accept=".txt">
+                <button id="btn1">Upload</button>
+            </div>
+            <div class="file-upload">
+                <label for="file2">OPTAB File:</label>
+                <input type="file" id="file2" accept=".txt">
+                <button id="btn2">Upload</button>
+            </div>
+        </section>
+        
+        <section class="editor-section">
+            <h2>Code Editor</h2>
+            <textarea id="pass1" placeholder="Write or paste your assembly code here..."></textarea>
+            <textarea id="op" placeholder="Define your operation codes here..."></textarea>
+        </section>
+        
+        <section class="action-section">
+            <button id="btnp1">Run Pass One</button>
+            <button id="btnp2">Run Pass Two</button>
+            <button id="clrsrc">Clear Assembly Code</button>
+        </section>
+        
+        <section class="output-section">
+            <h2>Intermediate File Output</h2>
+            <textarea id="output1" placeholder="Intermediate output will appear here..."></textarea>
+            <button id="btnsave3">Save Intermediate File</button>
+            <button id="clrout1">Clear Intermediate</button>
+        </section>
+
+        <section class="output-section">
+            <h2>Symbol Table</h2>
+            <textarea id="symtab" placeholder="Symbol table output will appear here..."></textarea>
+            <button id="btnsave4">Save SYMTAB</button>
+            <button id="clrsym">Clear SYMTAB</button>
+        </section>
+
+        <section class="output-section">
+            <h2>Object Code Output</h2>
+            <textarea id="output2" placeholder="Object code output will appear here..."></textarea>
+            <button id="btnsave5">Save Output Pass 2</button>
+            <button id="clrout2">Clear Output Pass 2</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
