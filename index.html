@@ -3,62 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assembly Language Processor</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Assembly Code Processor</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Assembly Language Processor</h1>
-        </header>
-        
-        <section class="upload-section">
-            <h2>Upload Files</h2>
-            <div class="file-upload">
-                <label for="file1">Assembly Code File:</label>
-                <input type="file" id="file1" accept=".txt">
-                <button id="btn1">Upload</button>
-            </div>
-            <div class="file-upload">
-                <label for="file2">OPTAB File:</label>
-                <input type="file" id="file2" accept=".txt">
-                <button id="btn2">Upload</button>
-            </div>
-        </section>
-        
-        <section class="editor-section">
-            <h2>Code Editor</h2>
-            <textarea id="pass1" placeholder="Write or paste your assembly code here..."></textarea>
-            <textarea id="op" placeholder="Define your operation codes here..."></textarea>
-        </section>
-        
-        <section class="action-section">
-            <button id="btnp1">Run Pass One</button>
-            <button id="btnp2">Run Pass Two</button>
-            <button id="clrsrc">Clear Assembly Code</button>
-        </section>
-        
-        <section class="output-section">
-            <h2>Intermediate File Output</h2>
-            <textarea id="output1" placeholder="Intermediate output will appear here..."></textarea>
-            <button id="btnsave3">Save Intermediate File</button>
-            <button id="clrout1">Clear Intermediate</button>
-        </section>
+        <h1>Assembly Code Processor</h1>
 
-        <section class="output-section">
-            <h2>Symbol Table</h2>
-            <textarea id="symtab" placeholder="Symbol table output will appear here..."></textarea>
-            <button id="btnsave4">Save SYMTAB</button>
+        <div class="upload-section">
+            <input type="file" id="file1" accept=".txt">
+            <button id="btn1">Upload src</button>
+        </div>
+
+        <textarea id="pass1" placeholder="Assembly Code..."></textarea>
+        <button id="clrsrc">Clear Source</button>
+        <button id="btnsave1">Save Source</button>
+
+        <div class="upload-section">
+            <input type="file" id="file2" accept=".txt">
+            <button id="btn2">Upload OPTAB</button>
+        </div>
+
+        <textarea id="op" placeholder="OPTAB..."></textarea>
+        <button id="clrop">Clear OPTAB</button>
+        <button id="btnsave2">Save OPTAB</button>
+
+        <button id="btnp1">Pass 1</button>
+        <button id="btnp2">Pass 2</button>
+
+        <div class="output-section">
+            <h2>Intermediate Output</h2>
+            <textarea id="output1" placeholder="Intermediate Output..." readonly></textarea>
+            <button id="clrout1">Clear Intermediate Output</button>
+            <button id="btnsave3">Save Intermediate Output</button>
+        </div>
+
+        <div class="output-section">
+            <h2>SYMTAB</h2>
+            <textarea id="symtab" placeholder="Symbol Table..." readonly></textarea>
             <button id="clrsym">Clear SYMTAB</button>
-        </section>
+            <button id="btnsave4">Save SYMTAB</button>
+        </div>
 
-        <section class="output-section">
-            <h2>Object Code Output</h2>
-            <textarea id="output2" placeholder="Object code output will appear here..."></textarea>
-            <button id="btnsave5">Save Output Pass 2</button>
-            <button id="clrout2">Clear Output Pass 2</button>
-        </section>
+        <div class="output-section">
+            <h2>Pass 2 Output</h2>
+            <textarea id="output2" placeholder="Pass 2 Output..." readonly></textarea>
+            <button id="clrout2">Clear Pass 2 Output</button>
+            <button id="btnsave5">Save Pass 2 Output</button>
+        </div>
+
+        <div class="bndry bndry2" style="display: none;">
+            <p>Pass 1 processing complete.</p>
+        </div>
+        <div class="bndry bndry3" style="display: none;">
+            <p>Pass 2 processing complete.</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
