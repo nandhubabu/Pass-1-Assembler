@@ -10,48 +10,59 @@
     <div class="container">
         <h1>Assembly Code Processor</h1>
 
+        <!-- Upload Section for Source File -->
         <div class="upload-section">
-            <input type="file" id="file1" accept=".txt">
-            <button id="btn1">Upload src</button>
+            <label for="file1">Source File:</label>
+            <input type="file" id="file1" accept=".txt" aria-label="Upload Source File">
+            <button id="btn1" title="Upload Source File">Upload src</button>
         </div>
 
-        <textarea id="pass1" placeholder="Assembly Code..."></textarea>
-        <button id="clrsrc">Clear Source</button>
-        <button id="btnsave1">Save Source</button>
+        <!-- Assembly Code Textarea -->
+        <textarea id="pass1" placeholder="Enter assembly source code here..." aria-label="Assembly Code"></textarea>
+        <button id="clrsrc" title="Clear Source Code">Clear Source</button>
+        <button id="btnsave1" title="Save Source Code">Save Source</button>
 
+        <!-- Upload Section for OPTAB File -->
         <div class="upload-section">
-            <input type="file" id="file2" accept=".txt">
-            <button id="btn2">Upload OPTAB</button>
+            <label for="file2">OPTAB File:</label>
+            <input type="file" id="file2" accept=".txt" aria-label="Upload OPTAB File">
+            <button id="btn2" title="Upload OPTAB File">Upload OPTAB</button>
         </div>
 
-        <textarea id="op" placeholder="OPTAB..."></textarea>
-        <button id="clrop">Clear OPTAB</button>
-        <button id="btnsave2">Save OPTAB</button>
+        <!-- OPTAB Textarea -->
+        <textarea id="op" placeholder="Enter OPTAB data here..." aria-label="OPTAB Data"></textarea>
+        <button id="clrop" title="Clear OPTAB">Clear OPTAB</button>
+        <button id="btnsave2" title="Save OPTAB">Save OPTAB</button>
 
-        <button id="btnp1">Pass 1</button>
-        <button id="btnp2">Pass 2</button>
+        <!-- Pass Buttons -->
+        <button id="btnp1" title="Execute Pass 1">Pass 1</button>
+        <button id="btnp2" title="Execute Pass 2">Pass 2</button>
 
+        <!-- Intermediate Output Section -->
         <div class="output-section">
             <h2>Intermediate Output</h2>
-            <textarea id="output1" placeholder="Intermediate Output..." readonly></textarea>
-            <button id="clrout1">Clear Intermediate Output</button>
-            <button id="btnsave3">Save Intermediate Output</button>
+            <textarea id="output1" placeholder="Intermediate Output will appear here..." readonly aria-label="Intermediate Output"></textarea>
+            <button id="clrout1" title="Clear Intermediate Output">Clear Intermediate Output</button>
+            <button id="btnsave3" title="Save Intermediate Output">Save Intermediate Output</button>
         </div>
 
+        <!-- SYMTAB Section -->
         <div class="output-section">
             <h2>SYMTAB</h2>
-            <textarea id="symtab" placeholder="Symbol Table..." readonly></textarea>
-            <button id="clrsym">Clear SYMTAB</button>
-            <button id="btnsave4">Save SYMTAB</button>
+            <textarea id="symtab" placeholder="Symbol Table will appear here..." readonly aria-label="Symbol Table"></textarea>
+            <button id="clrsym" title="Clear SYMTAB">Clear SYMTAB</button>
+            <button id="btnsave4" title="Save SYMTAB">Save SYMTAB</button>
         </div>
 
+        <!-- Pass 2 Output Section -->
         <div class="output-section">
             <h2>Pass 2 Output</h2>
-            <textarea id="output2" placeholder="Pass 2 Output..." readonly></textarea>
-            <button id="clrout2">Clear Pass 2 Output</button>
-            <button id="btnsave5">Save Pass 2 Output</button>
+            <textarea id="output2" placeholder="Pass 2 Output will appear here..." readonly aria-label="Pass 2 Output"></textarea>
+            <button id="clrout2" title="Clear Pass 2 Output">Clear Pass 2 Output</button>
+            <button id="btnsave5" title="Save Pass 2 Output">Save Pass 2 Output</button>
         </div>
 
+        <!-- Completion Notices -->
         <div class="bndry bndry2" style="display: none;">
             <p>Pass 1 processing complete.</p>
         </div>
@@ -60,9 +71,10 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2024 by <a href="https://nandhubabu.github.io/My-Portfolio/"><b>Nandhu Babu</b></a> | All Right Reserved</p>
+            <p>&copy; 2024 by <a href="https://nandhubabu.github.io/My-Portfolio/" target="_blank"><b>Nandhu Babu</b></a> | All Rights Reserved</p>
         </div>
     </footer>
 
