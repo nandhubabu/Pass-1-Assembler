@@ -95,7 +95,7 @@ a{
     text-decoration: none;
     color: black;
     text-shadow:  0px px 10px #ccc;
-
+}
 /* Additional Responsive Styles */
 @media (max-width: 600px) {
     .upload-section {
