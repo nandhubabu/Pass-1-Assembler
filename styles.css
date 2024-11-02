@@ -59,7 +59,7 @@ textarea {
     max-width: 600px; 
     height: 150px;
     padding: 10px;
-    margin: 10px 0; 
+    margin: 10px -13px; 
     border: 2px solid #aaa;
     border-radius: 5px;
     margin-bottom: 10px;
